@@ -1,0 +1,78 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top">
+    <a class="navbar-brand" href="#">Angular</a>
+    <button class="navbar-toggler hidden-sm-up" type="button" (click)="isNavbarCollapsed = !isNavbarCollapsed"
+             data-target="#navbarsDefault" aria-controls="navbarsDefault" aria-expanded="false" 
+             aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div [ngbCollapse]="isNavbarCollapsed" class="collapse navbar-collapse" id="navbarsDefault">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item dropdown" ngbDropdown>
+          <a class="nav-link dropdown-toggle" id="id01"  ngbDropdownToggle>Users</a>
+          <div class="dropdown-menu" aria-labelledby="id01" ngbDropdownMenu>
+            <a class="dropdown-item" routerLink = "create">Add User</a>
+            <a class="dropdown-item" routerLink = "index">View User</a>
+            <a class="dropdown-item" routerLink = "login">Login</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+
+
+  <!-- <mat-toolbar color="primary"> -->
+        <!-- <mat-toolbar-row>
+            <button mat-button>
+                <a routerLink = "create" routerLinkActive = "active">
+                    Add Users
+                  </a>
+            </button>
+            <button mat-button>
+                <a routerLink = "index" routerLinkActive = "active">
+                    View Users
+                  </a> 
+            </button>
+            <button mat-button>
+                <a routerLink = "login" routerLinkActive = "active">
+                    Login
+                  </a> 
+            </button>
+        </mat-toolbar-row> -->
+        
+    <!-- </mat-toolbar> -->
+
+
+
+    <!-- <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg=="> -->
+  <!-- <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <button class="btn btn-danger">
+            <a routerLink = "create" routerLinkActive = "active">
+                Add Users
+              </a>
+          
+        </button>
+        <button class="btn btn-danger">
+            <a routerLink = "index" routerLinkActive = "active">
+                View Users
+              </a> 
+        </button>
+        <button class="btn btn-danger">
+          <a routerLink = "login" routerLinkActive = "active">
+            Login
+          </a>
+         </button>
+      </div>
+    </nav> -->
+    <!-- <ng2-dropdown>
+        <ng2-dropdown-button>
+            Open Menu
+        </ng2-dropdown-button>
+        <ng2-dropdown-menu>
+            <ng2-menu-item *ngFor="let page of pages">
+                {{ page }}
+            </ng2-menu-item>
+        </ng2-dropdown-menu>
+    </ng2-dropdown> -->

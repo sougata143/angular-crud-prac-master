@@ -1,0 +1,37 @@
+<div class="panel panel-primary">
+  <div class="panel-heading" style="text-align:center">
+    <h2 style="text-align:center" class="page-header"> {{ title }}</h2>
+  </div>
+  <div class="panel-body">
+    <form>
+      <div class="form-group">
+        <label class="col-md-4">User Name</label>
+        <input type = "text" [(ngModel)]="users.name" class="form-control" name="user_name" />
+      </div>
+      <div class="form-group">
+          <label class="col-md-4">User loginid</label>
+          <input type = "text" [(ngModel)]="users.loginid" class="form-control" name="user_loginid" />
+      </div>
+      <div class="form-group">
+            <label class="col-md-4">User Email</label>
+            <input type = "email" [(ngModel)]="users.email" class="form-control" name="user_email" />
+        </div>
+      <div class="form-group">
+          <label class="col-md-4">User Address</label>
+          <input type = "text" [(ngModel)]="users.address" class="form-control" name="user_address" />
+      </div>
+      <div class="form-group">
+          <label class="col-md-4">User Password</label>
+          <input type = "password" [(ngModel)]="users.password" class="form-control" name="user_password" />
+      </div>
+      <div class="form-group">
+          <label class="col-md-4">User Contact Number</label>
+          <input type = "text" [(ngModel)]="users.contactno" class="form-control" name="user_contactno" />
+      </div>
+      
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary" (click)="addUser()">Add</button>
+        </div>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,28 @@
+<h2 style="text-align:center" class="page-header"> User Details</h2>
+<div class="col-md-12">
+    
+    <table class="table table-striped">
+      <thead>
+      <tr>
+        <th class="hidden">Id</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Address</th>
+        <th>Contact Number</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let user of users">
+        <td class="hidden">{{ user.id }}</td>
+        <td>{{ user.name }}</td>
+        <td>{{ user.email }}</td>
+        <td>{{ user.address }}</td>
+        <td>{{ user.contactno }}</td>
+        <td><a [routerLink]="['/edit', user.id]" class="btn btn-primary">Edit</a></td>
+        <td>
+          <button class="btn btn-danger" (click)="deleteUser(user.id)"> Delete</button>
+          <!-- <button class="btn btn-danger" (click)="editUser(user.id)" style="margin-left: 20px;"> Edit</button></td> -->
+      </tr>
+      </tbody>
+    </table>
+  </div>
